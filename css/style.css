@@ -31,8 +31,10 @@ main{
   background-color: aqua;
   font-size:small;
   text-align: center;+
-  min-height: 200px;
+  min-height: 100px;
   max-height: 600px;
+  max-width: 600px;
+  min-width: 100px;
 }
 /* 768px is a common "breakpoint" width for tablets  want to change the "main" section since it contains all*/
 @media only screen and (min-width: 768px) {
