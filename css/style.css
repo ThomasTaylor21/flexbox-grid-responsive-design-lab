@@ -9,7 +9,7 @@ html {
   /* height & width will now include border & padding by default
      but can be over-ridden as needed */
   box-sizing: inherit;
-  
+
 }
 
 /* resets font size to be 62.5% of the user preference - 
@@ -30,11 +30,20 @@ body {
 @media only screen and (min-width: 768px) {
   body {
     /* tablet - two column display */
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 50px auto 30px;
     grid-template-areas: 
-      "header header"
+      /* "header header"
       "side content"
-      "footer footer";
+      "footer footer"; */
   }
+  div {
+    width: 400px;
+    height: 200px;
+  }
+.content-box{
+
+
+
+}
 }
