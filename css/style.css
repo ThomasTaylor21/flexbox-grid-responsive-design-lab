@@ -25,24 +25,30 @@ body {
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
 }
+main{
+  width: 400px;
+  background-color: aqua;
+  font-size:small;
+  text-align: center;+
 
-/* 768px is a common "breakpoint" width for tablets */
+}
+/* 768px is a common "breakpoint" width for tablets  want to change the "main" section since it contains all*/
 @media only screen and (min-width: 768px) {
-  body {
-    /* tablet - two column display */
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px auto 30px;
-    grid-template-areas: 
-      /* "header header"
-      "side content"
-      "footer footer"; */
-  }
-  div {
-    width: 400px;
-    height: 200px;
-  }
-.content-box{
+  main{
+       grid-area: auto;
 
+       grid-template-columns: 1ff;
+       grid-template-rows: 50px auto 30px;
+       grid-template-areas: 
+         "brand brand"
+         "offer"
+         "contact";
+     }
+   } 
+
+
+
+  }  
 
 
 }
