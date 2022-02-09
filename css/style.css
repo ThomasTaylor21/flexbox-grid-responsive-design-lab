@@ -26,30 +26,24 @@ body {
   margin: 0;
 }
 main{
-  width: 400px;
+ 
+ display: grid;
   background-color: aqua;
   font-size:small;
   text-align: center;+
-
+  min-height: 200px;
+  max-height: 600px;
 }
 /* 768px is a common "breakpoint" width for tablets  want to change the "main" section since it contains all*/
 @media only screen and (min-width: 768px) {
-  main{
-       grid-area: auto;
-
-       grid-template-columns: 1ff;
-       grid-template-rows: 50px auto 30px;
-       grid-template-areas: 
-         "brand brand"
-         "offer"
-         "contact";
-     }
-   } 
-
-
-
-  }  
-
-
+main {
+  grid-area: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "brand brand"
+    "offer"
+    "contact";
 }
-}
+} 
+
