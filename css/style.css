@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box
 }
-
+ /* work the way down trough each section, make adjustments and test them. */
 /* The Universal Selector */
 *, /* All elements*/
 *::before, /* All ::before pseudo-elements */
@@ -17,7 +17,7 @@ html {
 :root {
   font-size: 62.5%;
 }
-
+/*  first part will show landscape and second part will fit smaller screens */
 body {
   background-color: gray;
 /* Use a system font, if none are available use an available sans-sarif   font */
@@ -30,19 +30,49 @@ body {
   justify-content:  center;
 }
 main{
- 
- display: grid;
-  background-color: aqua;
-  font-size:small;
+  width: 325px;
+  background-color: rgb(230, 241, 241);
+  font-size:1.5rem;
   text-align: center;
-  min-height: 100px;
-  max-height: 600px;
-  max-width: 600px;
-  min-width: 100px;
 }
-/* 768px is a common "breakpoint" width for tablets  want to change the "main" section since it contains all*/
-@media only screen and (min-width: 768px) {
-main {
+
+#status {
+  text-align: right;
+  font-weight: bold;
+  }
+
+img{
+border-radius: 50px;
+border-color: rgb(26, 63, 51) 5px solid;
+}
+h1 {
+  font-size: 3rem;
+  padding-inline-end: ;
+}
+#occupation{
+background-color: rgb(166, 228, 236);
+padding-inline-end: 5rem 0;
+}
+#brand{
+display: none;
+}
+#offer{
+  padding: 12px;
+  }
+#contact{
+  display: flex;
+}
+
+#contact >p{
+width: 50%;
+height:35px
+display: flex:
+
+
+}
+
+  /* 768px is a common "breakpoint" width for tablets  want to change the "main" section since it contains all*/
+@media only screen and (min-width: 650px) {}main {
   grid-area: auto;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -51,5 +81,5 @@ main {
     "offer"
     "contact";
 }
-} 
+
 
